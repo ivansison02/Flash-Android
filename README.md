@@ -16,9 +16,10 @@ This library is for easily making flash screen using fragments
 	}
   
   
-  
+Initializing the class.
+-> Flash flash = new Flash(this);
 
-First set up the fragments.
+Setting up the fragments.
 -> flash.setFragments(R.id.frame, new FlashFragment(), new MainFragment());
 
 Optional: Changing flash time. (1000 = 1 sec) Default is 1400
