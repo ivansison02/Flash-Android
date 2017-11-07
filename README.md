@@ -16,7 +16,7 @@ This library is for easily making flash screen using fragments
 	}
   
   
-
+  
 
 First set up the fragments.
 -> flash.setFragments(R.id.frame, new FlashFragment(), new MainFragment());
