@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.widget.Toast;
 
 /**
  * Created by MGI-Ivan on 06/11/2017.
@@ -30,8 +31,13 @@ public class Flash {
     }
 
     private void getRefClass() {
-        flashSetting = new FlashSetting();
-        flashMethod = new FlashMethod(getFragmentActivity().getSupportFragmentManager());
+        try {
+            flashSetting = new FlashSetting();
+            flashMethod = new FlashMethod(getFragmentActivity().getSupportFragmentManager());
+        }
+        catch (Exception e) {
+            Toast.makeText(context, "Error : " + e.toString(), Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showFlash() {
@@ -61,14 +67,14 @@ public class Flash {
 
         Handler handler = new Handler();
         handler.postDelayed(
-                new Runnable() {
-                    public void run() {
-                        try {
-                            showMain();
-                        } catch (Exception e) {
-                            Log.e(TAG, e.toString());
-                        }
+            new Runnable() {
+                public void run() {
+                    try {
+                        showMain();
+                    } catch (Exception e) {
+                        Log.e(TAG, e.toString());
                     }
-                }, flashSetting.getTime());
+                }
+            }, flashSetting.getTime());
     }
 }
