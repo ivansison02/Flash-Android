@@ -43,7 +43,7 @@ Flash flash = new Flash(this);<br />
 <h4>CODING:</h4>
 
 ```
-//flash.setFragments(int frameLayout, Fragment flashScreen, Fragment mainScreen);
+//Note: You need two fragments. One for flash screen and the other, after the flash screen.
 flash.setFragments(R.id.frame, new FlashFragment(), new MainFragment());
 ```
 
