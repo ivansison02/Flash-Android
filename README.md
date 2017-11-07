@@ -47,11 +47,11 @@ Flash flash = new Flash(this);<br />
 flash.setFragments(R.id.frame, new FlashFragment(), new MainFragment());
 ```
 
-3. (Optional) Changing flash time. (1000 = 1 sec) Default is 1400<br />
+<i>(Optional) Changing the duration of flash time. (1000 = 1 sec) Default is 1400<br /><i/>
 ```
 flash.setFlashTime(3000);
 ```
-4. Lastly.<br />
+3. Lastly.<br />
 ```
 flash.startFlashing();
 ```
