@@ -2,6 +2,22 @@
 This library is for easily making flash screen using fragments
 
 
+1. Add it in your root build.gradle at the end of repositories:
+  allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+2. Add the dependency:
+  dependencies {
+	        compile 'com.github.ivansison02:Flash-Android:-SNAPSHOT'
+	}
+  
+  
+
+
 First set up the fragments.
 -> flash.setFragments(R.id.frame, new FlashFragment(), new MainFragment());
 
