@@ -2,10 +2,6 @@ package mgi.ivan_sison.flashlib;
 
 import android.support.v4.app.Fragment;
 
-/**
- * Created by MGI-Ivan on 06/11/2017.
- */
-
 public class FlashSetting {
 
     private static final String TAG = "FlashScreenLib";

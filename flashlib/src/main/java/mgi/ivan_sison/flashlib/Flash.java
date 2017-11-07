@@ -7,10 +7,6 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.widget.Toast;
 
-/**
- * Created by MGI-Ivan on 06/11/2017.
- */
-
 public class Flash {
 
     private static final String TAG = "FlashScreenLib";

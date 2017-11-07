@@ -4,10 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-/**
- * Created by MGI-Ivan on 06/11/2017.
- */
-
 public class FlashMethod {
 
     private static final String TAG = "FlashScreenLib";
