@@ -25,7 +25,7 @@ dependencies {
 
 1. Initializing the class.<br />
 ```
-Flash flash = new Flash(this);<br />
+Flash flash = new Flash(this);
 ```
 
 2. Setting up the fragments.<br />
