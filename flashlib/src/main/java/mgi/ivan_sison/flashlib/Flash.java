@@ -30,8 +30,13 @@ public class Flash {
     }
 
     private void getRefClass() {
-        flashSetting = new FlashSetting();
-        flashMethod = new FlashMethod(getFragmentActivity().getSupportFragmentManager());
+        try {
+            flashSetting = new FlashSetting();
+            flashMethod = new FlashMethod(getFragmentActivity().getSupportFragmentManager());
+        }
+        catch (Exception e) {
+            Toast.makeText(context, "Error : " + e.toString(), Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showFlash() {
