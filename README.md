@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Flash-Android
-=======
+
 # Flash-Android
 This library is for easily making flash screen using fragments
 
